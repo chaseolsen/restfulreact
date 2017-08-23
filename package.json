@@ -32,12 +32,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chaseolsen/socialtrade.io.git"
+    "url": "git+https://github.com/chaseolsen/restfulreact.git"
   },
   "author": "Chase Olsen",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chaseolsen/socialtrade.io/issues"
+    "url": "https://github.com/chaseolsen/restfulreact/issues"
   },
-  "homepage": "https://github.com/chaseolsen/socialtrade.io#readme"
+  "homepage": "https://github.com/chaseolsen/restfulreact#readme"
 }
