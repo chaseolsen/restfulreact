@@ -1,0 +1,2 @@
+# restfulreact
+Basic boilerplate environment.
