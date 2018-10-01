@@ -9,7 +9,8 @@ export default class Layout extends React.Component {
     super();
     this.state = {
       stockData: [],
-      myData: []
+      myData: [],
+      myName: ''
     }
   }
 
@@ -26,7 +27,7 @@ export default class Layout extends React.Component {
         })
       }.bind(this),
       error: function(xhr, status, err){
-        console.log(err);
+        console.log('Something went wrong... Possible CORS issue.', err);
       }
     })
   }
@@ -51,6 +52,7 @@ export default class Layout extends React.Component {
   componentWillMount(){
     this.getStockData();
     this.getTestData();
+    this.setState({myName: 'Chase'});
     // this.getStockData();
   }
   componentDidMount(){
@@ -60,8 +62,8 @@ export default class Layout extends React.Component {
 
   render() {
     return (
-      <div>
-        <Featured />
+      <div className="container">
+        <Featured myName={this.state.myName}/>
         <h1>- Stock Data Example</h1>
         <h2>{this.state.stockData.Name}</h2>
         <h3>Price: {this.state.stockData.LastPrice}</h3>
